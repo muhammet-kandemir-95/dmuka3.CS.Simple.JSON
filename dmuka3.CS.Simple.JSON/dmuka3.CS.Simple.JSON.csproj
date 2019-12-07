@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Description>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</Description>
+    <Copyright>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</Copyright>
+    <PackageProjectUrl>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</RepositoryUrl>
+    <PackageTags>c#,core,simple,dmuka3</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\k8a1n\source\repos\dmuka3.CS.Simple.JSON\dmuka3.CS.Simple.JSON\dmuka3.CS.Simple.JSON.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
