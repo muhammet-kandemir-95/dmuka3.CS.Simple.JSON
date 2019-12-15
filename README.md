@@ -76,7 +76,7 @@ developer.addresses = new object[]
 developer.addresses.push("Address 3");
  ```
  
- ## Example 1
+ ## Example 2
  
   We can also use download.
  
@@ -130,11 +130,3 @@ developer.addresses = new object[]
 	*/
 developer.addresses.push("Address 3");
  ```
-
- The output file is;
- 
-| TYPE    | DATETIME                | TITLE     | DESCRIPTION            | PROCESS DATA              |
-|---------|-------------------------|-----------|------------------------|---------------------------|
-| Info    | 2019-10-31 19:09:25.309 | NUnit-Log | This is a info log.    | {"info":{"data":true}}    |
-| Warning | 2019-10-31 19:09:25.319 | NUnit-Log | This is a warning log. | {"warning":{"data":true}} |
-| Error   | 2019-10-31 19:09:25.322 | NUnit-Log | This is a error log.   | {"error":{"data":true}}   |
