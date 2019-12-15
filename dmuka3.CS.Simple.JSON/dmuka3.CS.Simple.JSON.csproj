@@ -6,8 +6,9 @@
     <Copyright>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</Copyright>
     <PackageProjectUrl>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</PackageProjectUrl>
     <RepositoryUrl>https://github.com/muhammet-kandemir-95/dmuka3.CS.Simple.JSON</RepositoryUrl>
-    <PackageTags>c#,core,simple,dmuka3</PackageTags>
+    <PackageTags>c#,core,simple,dmuka3,json</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
