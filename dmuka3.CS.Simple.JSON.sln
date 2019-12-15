@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmuka3.CS.Simple.JSON", "dmuka3.CS.Simple.JSON\dmuka3.CS.Simple.JSON.csproj", "{22618325-32A0-49B9-99C7-193DD6BEEBAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmuka3.CS.Simple.JSON.NUnit", "dmuka3.CS.Simple.JSON.NUnit\dmuka3.CS.Simple.JSON.NUnit.csproj", "{8AAF9601-5ED1-42AB-876A-E177FF818BF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{22618325-32A0-49B9-99C7-193DD6BEEBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22618325-32A0-49B9-99C7-193DD6BEEBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22618325-32A0-49B9-99C7-193DD6BEEBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAF9601-5ED1-42AB-876A-E177FF818BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAF9601-5ED1-42AB-876A-E177FF818BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAF9601-5ED1-42AB-876A-E177FF818BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAF9601-5ED1-42AB-876A-E177FF818BF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

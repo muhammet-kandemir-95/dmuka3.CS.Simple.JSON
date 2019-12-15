@@ -4,6 +4,93 @@
         <name>dmuka3.CS.Simple.JSON</name>
     </assembly>
     <members>
+        <member name="T:dmuka3.CS.Simple.JSON.JArray">
+            <summary>
+            JSON Array
+            </summary>
+        </member>
+        <member name="P:dmuka3.CS.Simple.JSON.JArray.Item(System.Int32)">
+            <summary>
+            Get an item by index.
+            </summary>
+            <param name="index">Item index.</param>
+            <returns></returns>
+        </member>
+        <member name="P:dmuka3.CS.Simple.JSON.JArray.length">
+            <summary>
+            Length of list.
+            </summary>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.push(System.Object)">
+            <summary>
+            Add a new item to list.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.clear">
+            <summary>
+            Clear list.
+            </summary>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.GetEnumerator">
+            <summary>
+            GetEnumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.insert(System.Int32,System.Object)">
+            <summary>
+            Insert an item by index.
+            </summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.removeAt(System.Int32)">
+            <summary>
+            Remove an item by index.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JArray.ToString">
+            <summary>
+            Get string as JSON.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:dmuka3.CS.Simple.JSON.JObject">
+            <summary>
+            Json Object
+            </summary>
+        </member>
+        <member name="P:dmuka3.CS.Simple.JSON.JObject.Item(System.String)">
+            <summary>
+            Get an item by name.
+            </summary>
+            <param name="name">Item name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JObject.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)">
+            <summary>
+            Try to set a value.
+            </summary>
+            <param name="binder"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+            <summary>
+            Try to get a value.
+            </summary>
+            <param name="binder"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dmuka3.CS.Simple.JSON.JObject.ToString">
+            <summary>
+            Get string as JSON.
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:dmuka3.CS.Simple.JSON.json">
             <summary>
             JSON class.
@@ -15,19 +102,19 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:dmuka3.CS.Simple.JSON.json.a">
+        <member name="M:dmuka3.CS.Simple.JSON.json.arr">
             <summary>
             Create a JArray.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:dmuka3.CS.Simple.JSON.json.o">
+        <member name="M:dmuka3.CS.Simple.JSON.json.obj">
             <summary>
             Create a JObject.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.Object,System.String,System.Net.CookieContainer)">
+        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.Object,System.String,System.Net.CookieContainer,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>
             Get JSON from url's json result.
             </summary>
@@ -35,9 +122,11 @@
             <param name="method"></param>
             <param name="content"></param>
             <param name="contentType"></param>
+            <param name="cookieContainer"></param>
+            <param name="headers"></param>
             <returns></returns>
         </member>
-        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.String,System.String,System.Net.CookieContainer)">
+        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.String,System.String,System.Net.CookieContainer,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>
             Get JSON from url's json result.
             </summary>
@@ -45,9 +134,11 @@
             <param name="method"></param>
             <param name="content"></param>
             <param name="contentType"></param>
+            <param name="cookieContainer"></param>
+            <param name="headers"></param>
             <returns></returns>
         </member>
-        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.Byte[],System.String,System.Net.CookieContainer)">
+        <member name="M:dmuka3.CS.Simple.JSON.json.download(System.String,System.String,System.Byte[],System.String,System.Net.CookieContainer,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>
             Get JSON from url's json result.
             </summary>
@@ -55,6 +146,8 @@
             <param name="method"></param>
             <param name="content"></param>
             <param name="contentType"></param>
+            <param name="cookieContainer"></param>
+            <param name="headers"></param>
             <returns></returns>
         </member>
         <member name="M:dmuka3.CS.Simple.JSON.json.parse(System.String)">
@@ -63,45 +156,6 @@
             </summary>
             <param name="j"></param>
             <returns></returns>
-        </member>
-        <member name="T:dmuka3.CS.Simple.JSON.JArray">
-            <summary>
-            JSON Array
-            </summary>
-        </member>
-        <member name="P:dmuka3.CS.Simple.JSON.JArray.Count">
-            <summary>
-            Length of list.
-            </summary>
-        </member>
-        <member name="M:dmuka3.CS.Simple.JSON.JArray.Add(System.Object)">
-            <summary>
-            Add a new item to list.
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="M:dmuka3.CS.Simple.JSON.JArray.Clear">
-            <summary>
-            Clear list.
-            </summary>
-        </member>
-        <member name="M:dmuka3.CS.Simple.JSON.JArray.Insert(System.Int32,System.Object)">
-            <summary>
-            Insert an item by index.
-            </summary>
-            <param name="index"></param>
-            <param name="item"></param>
-        </member>
-        <member name="M:dmuka3.CS.Simple.JSON.JArray.RemoveAt(System.Int32)">
-            <summary>
-            Remove an item by index.
-            </summary>
-            <param name="index"></param>
-        </member>
-        <member name="T:dmuka3.CS.Simple.JSON.JObject">
-            <summary>
-            Json Object
-            </summary>
         </member>
     </members>
 </doc>
